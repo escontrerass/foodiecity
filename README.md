@@ -1,9 +1,9 @@
 Proyecto Foodie City - Multimedia UNET
 
-Produccion
+Produccion 🖥
 Link: https://foodiecity.vercel.app/
 
-Desarrollo
+Desarrollo ⚙
 
 1. Instalar dependencias del proyecto
    npm install
@@ -13,8 +13,8 @@ Desarrollo
 
 Integrantes:
 
-1.
-2.
-3.
-4.
+1. Edgar Samuel Contreras Garcia 24.152.028
+2. Luis Alfonso Tavera Avendaño 21.001.932
+3. Tiziana Amicarella Girardi 26.290.998
+4. Miguel Jesus Jaimes Duarte 20.628.549
 5.

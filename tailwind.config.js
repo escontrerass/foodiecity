@@ -11,8 +11,11 @@ module.exports = {
         gray: '#707070',
       },
       fontFamily: {
-        quick: ['Quicksand', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
+        mont: ['Montserrat', 'sans-serif'],
+        bebas: ['Bebas Neue', 'sans-serif'],
+      },
+      fontSize: {
+        s: '12px',
       },
       spacing: {
         menuCategory: '120px',
