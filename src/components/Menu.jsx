@@ -2,6 +2,7 @@ import React from 'react';
 import { Logo } from './Logo';
 import { CgMenu, CgSearch } from 'react-icons/cg';
 import { menuContext } from '../context/menuContext';
+import { Link } from 'react-router-dom';
 
 export const Menu = ({ status }) => {
   const { menu, setMenu } = React.useContext(menuContext);
@@ -14,7 +15,9 @@ export const Menu = ({ status }) => {
           <CgMenu size={iconSize} />
         </button>
         <button className='w-32'>
-          <Logo status={true} />
+          <Link to='/'>
+            <Logo status={true} />
+          </Link>
         </button>
         {!status ? (
           <button className='w-8'>

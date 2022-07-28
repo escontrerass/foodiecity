@@ -1,6 +1,6 @@
 import React from 'react';
 import { LayoutMin } from '../containers/LayoutMin';
-import { AiFillSound, AiFillHome } from 'react-icons/ai';
+import { AiFillSound, AiFillHome, AiFillShop } from 'react-icons/ai';
 import { FaDumpsterFire, FaUser } from 'react-icons/fa';
 import { BsPeopleFill } from 'react-icons/bs';
 import { RiCustomerService2Fill } from 'react-icons/ri';
@@ -21,9 +21,9 @@ export const AppMenu = () => {
   };
   const handleStatus = () => setStatus(!status);
   return (
-    <div className='absolute top-0 pt-28 bg-white w-full h-screen z-10'>
+    <div className='fixed flex flex-col justify-between top-0 pt-28 bg-white w-full h-screen z-10'>
       <LayoutMin>
-        <div className='relative flex flex-col justify-between px-10 h-full z-30'>
+        <div className='flex flex-col justify-between px-10 h-full z-30'>
           <div className='flex flex-col gap-5'>
             <Link to={'/'}>
               <button
@@ -34,23 +34,62 @@ export const AppMenu = () => {
                 <AiFillHome size={sizeIcon} /> Inicio
               </button>
             </Link>
-            <button type='button' className={styleButton}>
+            <button
+              type='button'
+              onClick={() => handleClick()}
+              className={styleButton}
+            >
               <AiFillSound size={sizeIcon} /> Sitios nuevos
             </button>
-            <button type='button' className={styleButton}>
+            <button
+              type='button'
+              onClick={() => handleClick()}
+              className={styleButton}
+            >
               <FaDumpsterFire size={sizeIcon} /> Sitios populares
             </button>
-            <button type='button' className={styleButton}>
-              <BsPeopleFill size={sizeIcon} /> Quienes somos
-            </button>
-            <button type='button' className={styleButton}>
-              <RiCustomerService2Fill size={sizeIcon} /> Soporte
-            </button>
-            <button type='button' className={styleButton}>
-              <CgPhone size={sizeIcon} /> Contacto
-            </button>
+            <Link to='about'>
+              <button
+                type='button'
+                onClick={() => handleClick()}
+                className={styleButton}
+              >
+                <BsPeopleFill size={sizeIcon} /> Quienes somos
+              </button>
+            </Link>
+            <Link to='support'>
+              <button
+                type='button'
+                onClick={() => handleClick()}
+                className={styleButton}
+              >
+                <RiCustomerService2Fill size={sizeIcon} /> Soporte
+              </button>
+            </Link>
+            <Link to='contact'>
+              <button
+                type='button'
+                onClick={() => handleClick()}
+                className={styleButton}
+              >
+                <CgPhone size={sizeIcon} /> Contacto
+              </button>
+            </Link>
           </div>
-          <div className='mb-20 w-full'>
+          {status && (
+            <Link to={'/'}>
+              <button
+                type='button'
+                onClick={() => handleLogin()}
+                className={styleButton}
+              >
+                <AiFillShop size={sizeIcon} /> Agregar negocio
+              </button>
+            </Link>
+          )}
+        </div>
+        <div className='h-36 bg-gradient-to-t from-amber-200'>
+          <div className='w-full px-10 mt-10'>
             {!status ? (
               <Link to={'/'}>
                 <button
