@@ -5,7 +5,7 @@ import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
 export const Footer = ({ status }) => {
   const iconsStyle = 'bg-black rounded-full p-1 cursor-pointer';
   return (
-    <footer className='fixed bottom-0 w-full flex flex-col items-center'>
+    <footer className='bottom-0 w-full flex flex-col items-center'>
       <div className='grid grid-cols-2 justify-items-center w-full h-36 bg-gradient-to-t from-amber-200'>
         {!status && (
           <>

@@ -8,7 +8,7 @@ export const Menu = ({ status }) => {
   const iconSize = '2rem';
   const handleClick = () => setMenu(!menu);
   return (
-    <header className='flex flex-col gap-6 fixed top-0 w-full bg-gradient-to-b from-amber-200 p-5'>
+    <header className='flex flex-col gap-6 fixed top-0 w-full bg-gradient-to-b from-amber-200 bg-white p-5 z-50'>
       <nav className='flex justify-between'>
         <button onClick={() => handleClick()} className='w-8'>
           <CgMenu size={iconSize} />
