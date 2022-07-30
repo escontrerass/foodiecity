@@ -34,7 +34,7 @@ export const AppMenu = () => {
                 <AiFillHome size={sizeIcon} /> Inicio
               </button>
             </Link>
-            <Link to='news'>
+            <Link to='/news'>
               <button
                 type='button'
                 onClick={() => handleClick()}
@@ -43,7 +43,7 @@ export const AppMenu = () => {
                 <AiFillSound size={sizeIcon} /> Sitios nuevos
               </button>
             </Link>
-            <Link to='popular'>
+            <Link to='/popular'>
               <button
                 type='button'
                 onClick={() => handleClick()}
@@ -52,7 +52,7 @@ export const AppMenu = () => {
                 <FaDumpsterFire size={sizeIcon} /> Sitios populares
               </button>
             </Link>
-            <Link to='about'>
+            <Link to='/about'>
               <button
                 type='button'
                 onClick={() => handleClick()}
@@ -61,7 +61,7 @@ export const AppMenu = () => {
                 <BsPeopleFill size={sizeIcon} /> Quienes somos
               </button>
             </Link>
-            <Link to='support'>
+            <Link to='/support'>
               <button
                 type='button'
                 onClick={() => handleClick()}
@@ -70,7 +70,7 @@ export const AppMenu = () => {
                 <RiCustomerService2Fill size={sizeIcon} /> Soporte
               </button>
             </Link>
-            <Link to='contact'>
+            <Link to='/contact'>
               <button
                 type='button'
                 onClick={() => handleClick()}
