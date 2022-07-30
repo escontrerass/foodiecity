@@ -9,16 +9,16 @@ import { sitesList, categoryList } from '../data';
 import { SiteCarousel } from '../components/SiteCarousel';
 import { PrimaryButton } from '../components/PrimaryButton';
 
-export const PopularSites = () => {
+export const News = () => {
   const { menu, login } = React.useContext(menuContext);
-  const sitesPopular = sitesList.filter((site) => site.rating >= 4.7);
+  const sitesNews = sitesList.slice(0, 3);
   return (
     <Layout>
       {menu && <AppMenu />}
       {login && <Login />}
       <Main>
         <div className='flex justify-between items-center'>
-          <h3 className='font-bebas text-xl'>Sitios populares</h3>
+          <h3 className='font-bebas text-xl'>Sitios nuevos</h3>
           <div className='w-4/6'>
             <Select label='Elige una categoria' color='orange'>
               {categoryList &&
@@ -30,7 +30,7 @@ export const PopularSites = () => {
         </div>
         <div className='flex flex-col gap-5'>
           {sitesList &&
-            sitesPopular.map((site) => <SiteCarousel {...site} more={true} />)}
+            sitesNews.map((site) => <SiteCarousel {...site} more={true} />)}
         </div>
         {sitesList.length > 3 && (
           <div className='w-3/6 self-center'>

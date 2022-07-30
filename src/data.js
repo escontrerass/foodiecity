@@ -432,6 +432,10 @@ export const sitesList = [
 
 export const categoryList = [
   {
+    id: 0,
+    name: 'Todas',
+  },
+  {
     id: 1,
     name: 'Comida rapida',
   },

@@ -9,7 +9,7 @@ import { sitesList, categoryList } from '../data';
 import { Categories } from '../components/Categories';
 export const Home = () => {
   const { menu, login } = React.useContext(menuContext);
-  const recent = sitesList.slice(sitesList.length - 4);
+  const news = sitesList.slice(sitesList.length - 4);
   const top = sitesList.filter((site) => site.rating >= 4.7);
   const categoryHome = categoryList.slice(0, 6);
   return (
@@ -17,8 +17,8 @@ export const Home = () => {
       {menu && <AppMenu />}
       {login && <Login />}
       <Main>
-        <Carousel title='Sitios recientes' data={recent} />
-        <Carousel title='Sitios populares' data={top} />
+        <Carousel title='Sitios nuevos' data={news} link='news' />
+        <Carousel title='Sitios populares' data={top} link='popular' />
         <Categories categories={categoryHome} />
       </Main>
     </Layout>
