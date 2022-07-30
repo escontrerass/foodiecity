@@ -34,20 +34,24 @@ export const AppMenu = () => {
                 <AiFillHome size={sizeIcon} /> Inicio
               </button>
             </Link>
-            <button
-              type='button'
-              onClick={() => handleClick()}
-              className={styleButton}
-            >
-              <AiFillSound size={sizeIcon} /> Sitios nuevos
-            </button>
-            <button
-              type='button'
-              onClick={() => handleClick()}
-              className={styleButton}
-            >
-              <FaDumpsterFire size={sizeIcon} /> Sitios populares
-            </button>
+            <Link to='/news'>
+              <button
+                type='button'
+                onClick={() => handleClick()}
+                className={styleButton}
+              >
+                <AiFillSound size={sizeIcon} /> Sitios nuevos
+              </button>
+            </Link>
+            <Link to='popular'>
+              <button
+                type='button'
+                onClick={() => handleClick()}
+                className={styleButton}
+              >
+                <FaDumpsterFire size={sizeIcon} /> Sitios populares
+              </button>
+            </Link>
             <Link to='about'>
               <button
                 type='button'
