@@ -34,7 +34,7 @@ export const AppMenu = () => {
                 <AiFillHome size={sizeIcon} /> Inicio
               </button>
             </Link>
-            <Link to='/news'>
+            <Link to='news'>
               <button
                 type='button'
                 onClick={() => handleClick()}
