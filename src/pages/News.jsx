@@ -23,18 +23,14 @@ export const News = () => {
             <Select label='Elige una categoria' color='orange'>
               {categoryList &&
                 categoryList.map((category) => (
-                  <Option key={category.id} value={category.id}>
-                    {category.name}
-                  </Option>
+                  <Option value={category.id}>{category.name}</Option>
                 ))}
             </Select>
           </div>
         </div>
         <div className='flex flex-col gap-5'>
           {sitesList &&
-            sitesNews.map((site) => (
-              <SiteCarousel key={site.id} {...site} more={true} />
-            ))}
+            sitesNews.map((site) => <SiteCarousel {...site} more={true} />)}
         </div>
         {sitesList.length > 3 && (
           <div className='w-3/6 self-center'>

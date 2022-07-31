@@ -30,9 +30,7 @@ export const PopularSites = () => {
         </div>
         <div className='flex flex-col gap-5'>
           {sitesList &&
-            sitesPopular.map((site) => (
-              <SiteCarousel key={site.id} {...site} more={true} />
-            ))}
+            sitesPopular.map((site) => <SiteCarousel {...site} more={true} />)}
         </div>
         {sitesList.length > 3 && (
           <div className='w-3/6 self-center'>
