@@ -3,8 +3,10 @@ import { Logo } from './Logo';
 import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-export const Footer = ({ status }) => {
+export const Footer = (props) => {
+  const { status } = props;
   const iconsStyle = 'bg-black rounded-full p-1 cursor-pointer';
+
   return (
     <footer className='bottom-0 w-full flex flex-col items-center'>
       {!status && (

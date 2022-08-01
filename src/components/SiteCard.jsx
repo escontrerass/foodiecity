@@ -1,6 +1,8 @@
 import React from 'react';
 
-const SiteCard = ({ sitesList }) => {
+const SiteCard = (props) => {
+  const { sitesList } = props;
+
   return (
     <div className='container border-2 border-rose'>
       {sitesList.map((site) => {

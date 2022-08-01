@@ -1,16 +1,12 @@
 import React from 'react';
 import { Layout } from '../containers/Layout';
 import { Main } from '../containers/Main';
-import { menuContext } from '../context/menuContext';
-import { AppMenu } from './AppMenu';
-import { Login } from '../components/Login';
+import { Extras } from '../components/Extras';
 
 export const About = () => {
-  const { menu, login } = React.useContext(menuContext);
   return (
     <Layout>
-      {menu && <AppMenu />}
-      {login && <Login />}
+      <Extras />
       <Main>
         <div className='flex flex-col gap-3 mt-10 px-3'>
           <h4 className='font-bebas text-xl mb-2'>Quienes somos</h4>

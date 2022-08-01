@@ -28,7 +28,6 @@ export const Login = () => {
             name='email'
             id='email'
             placeholder='email@example.com'
-            required='true'
           />
           <input
             className={inputStyles}
@@ -36,11 +35,10 @@ export const Login = () => {
             name='password'
             id='password'
             placeholder='******'
-            required
           />
           <input
             className='mt-2 bg-red rounded-lg w-1/2 self-center text-white text-sm px-4 py-1'
-            type='submit'
+            type='button'
             value='Iniciar sesion'
             onClick={() => handleStatus()}
           />

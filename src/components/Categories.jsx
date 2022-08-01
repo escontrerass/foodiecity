@@ -1,14 +1,11 @@
 import React from 'react';
+import { Section } from '../containers/Section';
 
-export const Categories = ({ categories }) => {
+export const Categories = (props) => {
+  const { categories } = props;
+
   return (
-    <div className='flex flex-col'>
-      <div className='flex justify-between mb-3'>
-        <h3 className='font-bebas text-xl'>Categorias</h3>
-        <button className='bg-red text-white px-4 py-1 rounded-2xl text-s font-mont'>
-          Ver mas
-        </button>
-      </div>
+    <Section title='Categorias' buttonTitle='Ver mas'>
       {categories && (
         <div className='flex flex-wrap gap-3 justify-between'>
           {categories.map((category) => (
@@ -21,6 +18,6 @@ export const Categories = ({ categories }) => {
           ))}
         </div>
       )}
-    </div>
+    </Section>
   );
 };

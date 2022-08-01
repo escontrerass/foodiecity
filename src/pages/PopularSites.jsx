@@ -2,20 +2,17 @@ import React from 'react';
 import { Select, Option } from '@material-tailwind/react';
 import { Layout } from '../containers/Layout';
 import { Main } from '../containers/Main';
-import { menuContext } from '../context/menuContext';
-import { AppMenu } from './AppMenu';
-import { Login } from '../components/Login';
 import { sitesList, categoryList } from '../data';
 import { SiteCarousel } from '../components/SiteCarousel';
 import { PrimaryButton } from '../components/PrimaryButton';
+import { Extras } from '../components/Extras';
 
 export const PopularSites = () => {
-  const { menu, login } = React.useContext(menuContext);
   const sitesPopular = sitesList.filter((site) => site.rating >= 4.7);
+
   return (
     <Layout>
-      {menu && <AppMenu />}
-      {login && <Login />}
+      <Extras />
       <Main>
         <div className='flex justify-between items-center'>
           <h3 className='font-bebas text-xl'>Sitios populares</h3>

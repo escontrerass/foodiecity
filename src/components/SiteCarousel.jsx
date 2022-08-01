@@ -6,6 +6,7 @@ export const SiteCarousel = (props) => {
   const { setSelected } = React.useContext(menuContext);
   const { id, name, category, imagen, description, more } = props;
   const handleClick = () => setSelected(props);
+
   return (
     <Link to={`/${category}/${id}`} onClick={() => handleClick()}>
       <div className='relative rounded-xl overflow-hidden'>

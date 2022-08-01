@@ -5,20 +5,14 @@ import { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { SiteCarousel } from '../components/SiteCarousel';
-import { Link } from 'react-router-dom';
+import { Section } from './Section';
 
-export const Carousel = ({ title, data, link }) => {
-  const redirection = `/${link}`;
+export const Carousel = (props) => {
+  const { title, data, link } = props;
+  // const redirection = `/${link}`;
+
   return (
-    <div className=''>
-      <div className='flex justify-between mb-3'>
-        <h3 className='font-bebas text-xl'>{title}</h3>
-        <Link to={redirection}>
-          <button className='bg-red text-white px-4 py-1 rounded-2xl text-s font-mont'>
-            Ver mas
-          </button>
-        </Link>
-      </div>
+    <Section title={title} buttonTitle='Ver mas'>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -33,6 +27,6 @@ export const Carousel = ({ title, data, link }) => {
             </SwiperSlide>
           ))}
       </Swiper>
-    </div>
+    </Section>
   );
 };
