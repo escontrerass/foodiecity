@@ -15,9 +15,19 @@ export const Home = () => {
     <Layout>
       <Extras />
       <Main>
-        <Carousel title='Sitios nuevos' data={news} link='news' />
-        <Carousel title='Sitios populares' data={top} link='popular' />
-        <Categories categories={categoryHome} link='category' />
+        <Carousel
+          title='Sitios nuevos'
+          buttonTitle='Ver mas'
+          data={news}
+          link='/news'
+        />
+        <Carousel
+          title='Sitios populares'
+          buttonTitle='Ver mas'
+          data={top}
+          link='/popular'
+        />
+        <Categories categories={categoryHome} link='/category' />
       </Main>
     </Layout>
   );

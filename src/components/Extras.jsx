@@ -4,7 +4,6 @@ import { AppMenu } from '../pages/AppMenu';
 import { Login } from '../components/Login';
 import { SignIn } from './SignIn';
 import { Business } from './Business';
-import { Search } from '../pages/Search';
 
 export const Extras = () => {
   const { menu, login, signIn, business } = React.useContext(menuContext);

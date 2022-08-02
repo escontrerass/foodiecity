@@ -13,11 +13,7 @@ export const Login = () => {
   };
 
   return (
-    <SectionModal
-      title='Iniciar sesion'
-      setSection={setLogin}
-      handle={handleStatus}
-    >
+    <SectionModal title='Iniciar sesion' setSection={setLogin}>
       <input
         className={inputStyles}
         type='email'

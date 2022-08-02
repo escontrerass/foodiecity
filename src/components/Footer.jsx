@@ -1,11 +1,10 @@
 import React from 'react';
 import { Logo } from './Logo';
-import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { Rrss } from './Rrss';
 
 export const Footer = (props) => {
   const { status } = props;
-  const iconsStyle = 'bg-black rounded-full p-1 cursor-pointer';
 
   return (
     <footer className='bottom-0 w-full flex flex-col items-center'>
@@ -16,35 +15,7 @@ export const Footer = (props) => {
               <div>
                 <Logo />
               </div>
-              <ul className='flex gap-3'>
-                <li className={iconsStyle}>
-                  <a
-                    href='https://www.facebook.com/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <BsFacebook color='white' />
-                  </a>
-                </li>
-                <li className={iconsStyle}>
-                  <a
-                    href='https://www.instagram.com/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <BsInstagram color='white' />
-                  </a>
-                </li>
-                <li className={iconsStyle}>
-                  <a
-                    href='https://twitter.com/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <BsTwitter color='white' />
-                  </a>
-                </li>
-              </ul>
+              <Rrss />
             </div>
             <div className='flex items-center w-full'>
               <ul className='flex flex-col gap-3 text-s'>

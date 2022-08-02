@@ -15,7 +15,7 @@ export const SectionModal = (props) => {
           </button>
         </div>
         <form
-          className='flex flex-col gap-5 justify-center items-center'
+          className='flex flex-col gap-5 justify-center items-center w-full'
           action='#'
         >
           {children}

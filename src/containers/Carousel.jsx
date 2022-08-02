@@ -8,10 +8,10 @@ import { SiteCarousel } from '../components/SiteCarousel';
 import { Section } from './Section';
 
 export const Carousel = (props) => {
-  const { title, data, link } = props;
+  const { title, buttonTitle, data, link } = props;
 
   return (
-    <Section title={title} buttonTitle='Ver mas' linkButton={link}>
+    <Section title={title} buttonTitle={buttonTitle} linkButton={link}>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

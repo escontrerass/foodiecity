@@ -14,7 +14,7 @@ export const Menu = (props) => {
 
   return (
     <header className='flex flex-col gap-6 fixed top-0 w-full bg-gradient-to-b from-amber-200 bg-white p-5 z-50'>
-      <nav className='flex justify-between'>
+      <nav className='flex justify-between items-center'>
         <button onClick={() => handleClick()} className='w-8'>
           <CgMenu size={iconSize} />
         </button>
@@ -24,8 +24,11 @@ export const Menu = (props) => {
           </Link>
         </button>
         {!menu ? (
-          <Link to='/search'>
-            <button onClick={() => handleSearch()} className='w-8'>
+          <Link className='self-center' to='/search'>
+            <button
+              onClick={() => handleSearch()}
+              className='flex items-center w-8'
+            >
               <CgSearch size={iconSize} />
             </button>
           </Link>

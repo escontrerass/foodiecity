@@ -12,6 +12,8 @@ import { Term } from '../pages/Term';
 import { SiteDetails } from '../pages/SiteDetails';
 import { Search } from '../pages/Search';
 import { Results } from '../pages/Results';
+import { Reviews } from '../pages/Reviews';
+import { Photos } from '../pages/Photos';
 
 export const App = () => {
   return (
@@ -20,6 +22,8 @@ export const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/:category/:id' element={<SiteDetails />} />
+          <Route path='/:category/:id/reviews' element={<Reviews />} />
+          <Route path='/:category/:id/photos' element={<Photos />} />
           <Route path='/news' element={<News />} />
           <Route path='/news/:id' element={<News />} />
           <Route path='/popular' element={<PopularSites />} />

@@ -13,7 +13,7 @@ export const SignIn = () => {
   };
 
   return (
-    <SectionModal title='Registro' setSection={setSignIn} handle={handleStatus}>
+    <SectionModal title='Registro' setSection={setSignIn}>
       <input
         className={inputStyles}
         type='text'
