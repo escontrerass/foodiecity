@@ -31,7 +31,7 @@ export const AppMenu = () => {
 
   return (
     <div className='fixed flex flex-col justify-between top-0 pt-28 bg-white w-full h-screen z-10'>
-      <LayoutMin>
+      <LayoutMin menu={true} footer={true}>
         <div className='flex flex-col justify-between px-10 h-full z-30'>
           <div className='flex flex-col gap-5'>
             <Link to={'/'}>

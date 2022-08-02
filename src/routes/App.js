@@ -10,6 +10,8 @@ import { News } from '../pages/News';
 import { Support } from '../pages/Support';
 import { Term } from '../pages/Term';
 import { SiteDetails } from '../pages/SiteDetails';
+import { Search } from '../pages/Search';
+import { Results } from '../pages/Results';
 
 export const App = () => {
   return (
@@ -24,6 +26,11 @@ export const App = () => {
           <Route path='/popular/:id' element={<PopularSites />} />
           <Route path='/category' element={<Category />} />
           <Route path='/category/:id' element={<Category />} />
+          <Route path='/results' element={<Results />} />
+          <Route path='/results/:id' element={<Results />} />
+          <Route path='/results/:category' element={<Results />} />
+          <Route path='/results/:category/:id' element={<Results />} />
+          <Route path='/search' element={<Search />} />
           <Route path='/about' element={<About />} />
           <Route path='/terms' element={<Term />} />
           <Route path='/support' element={<Support />} />

@@ -5,11 +5,12 @@ import { menuContext } from '../context/menuContext';
 import { Link } from 'react-router-dom';
 
 export const Menu = (props) => {
-  const { status } = props;
+  // const { status } = props;
   const { menu, setMenu } = React.useContext(menuContext);
   const iconSize = '2rem';
   const handleClick = () => setMenu(!menu);
   const handleLogo = () => setMenu(false);
+  const handleSearch = () => {};
 
   return (
     <header className='flex flex-col gap-6 fixed top-0 w-full bg-gradient-to-b from-amber-200 bg-white p-5 z-50'>
@@ -22,10 +23,12 @@ export const Menu = (props) => {
             <Logo status={true} />
           </Link>
         </button>
-        {!status ? (
-          <button className='w-8'>
-            <CgSearch size={iconSize} />
-          </button>
+        {!menu ? (
+          <Link to='/search'>
+            <button onClick={() => handleSearch()} className='w-8'>
+              <CgSearch size={iconSize} />
+            </button>
+          </Link>
         ) : (
           <div className='w-8' />
         )}

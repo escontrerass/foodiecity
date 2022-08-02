@@ -8,7 +8,7 @@ import { Extras } from '../components/Extras';
 export const Contact = () => {
   return (
     <Layout>
-      =<Extras />
+      <Extras />
       <Main>
         <div className='flex flex-col gap-3 mt-10 px-3'>
           <h4 className='font-bebas text-xl mb-2'>Contacto</h4>
