@@ -9,6 +9,7 @@ export const Menu = (props) => {
   const { menu, setMenu } = React.useContext(menuContext);
   const iconSize = '2rem';
   const handleClick = () => setMenu(!menu);
+  const handleLogo = () => setMenu(false);
 
   return (
     <header className='flex flex-col gap-6 fixed top-0 w-full bg-gradient-to-b from-amber-200 bg-white p-5 z-50'>
@@ -16,7 +17,7 @@ export const Menu = (props) => {
         <button onClick={() => handleClick()} className='w-8'>
           <CgMenu size={iconSize} />
         </button>
-        <button className='w-32'>
+        <button onClick={() => handleLogo()} className='w-32'>
           <Link to='/'>
             <Logo status={true} />
           </Link>

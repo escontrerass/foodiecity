@@ -3,21 +3,24 @@ import { menuContext } from '../context/menuContext';
 import { PrimaryButton } from './PrimaryButton';
 import { SectionModal } from '../containers/SectionModal';
 
-export const Login = () => {
-  const { setLogin, setStatus } = React.useContext(menuContext);
+export const SignIn = () => {
+  const { setSignIn, setStatus } = React.useContext(menuContext);
   const inputStyles =
     'border border-blue-gray-300 p-2 rounded-sm text-s w-full items-center';
   const handleStatus = () => {
-    setLogin(false);
+    setSignIn(false);
     setStatus(true);
   };
 
   return (
-    <SectionModal
-      title='Iniciar sesion'
-      setSection={setLogin}
-      handle={handleStatus}
-    >
+    <SectionModal title='Registro' setSection={setSignIn} handle={handleStatus}>
+      <input
+        className={inputStyles}
+        type='text'
+        name='name'
+        id='name'
+        placeholder='Nombre'
+      />
       <input
         className={inputStyles}
         type='email'
@@ -30,10 +33,17 @@ export const Login = () => {
         type='password'
         name='password'
         id='password'
-        placeholder='******'
+        placeholder='Contraseña'
+      />
+      <input
+        className={inputStyles}
+        type='password'
+        name='repassword'
+        id='repassword'
+        placeholder='Confirmar contraseña'
       />
       <div className='w-1/2 my-5'>
-        <PrimaryButton title='Iniciar sesion' handle={handleStatus} />
+        <PrimaryButton title='Registrar' handle={handleStatus} />
       </div>
     </SectionModal>
   );

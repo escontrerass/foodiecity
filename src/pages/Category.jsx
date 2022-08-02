@@ -8,13 +8,12 @@ import { PrimaryButton } from '../components/PrimaryButton';
 import { Extras } from '../components/Extras';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-export const News = () => {
-  const sitesNews = sitesList.slice(sitesList.length - 3, sitesList.length);
+export const Category = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const path = location.pathname.split('/');
-  const handleNews = (idCategory) => navigate(`/news/${idCategory}`);
-  const sitesFilter = sitesNews.filter(
+  const handleCategory = (idCategory) => navigate(`/category/${idCategory}`);
+  const sitesFilter = sitesList.filter(
     (site) =>
       site.category === parseInt(path[2]) ||
       0 === parseInt(path[2]) ||
@@ -26,12 +25,12 @@ export const News = () => {
       <Extras />
       <Main>
         <div className='flex justify-between items-center'>
-          <h3 className='font-bebas text-xl'>Sitios nuevos</h3>
+          <h3 className='font-bebas text-xl'>Categorias</h3>
           <div className='w-4/6'>
             <Select
               label='Elige una categoria'
               color='orange'
-              onChange={(e) => handleNews(e)}
+              onChange={(e) => handleCategory(e)}
             >
               {categoryList &&
                 categoryList.map((category) => (

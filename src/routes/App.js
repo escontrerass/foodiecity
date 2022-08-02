@@ -5,6 +5,7 @@ import { About } from '../pages/About';
 import { Contact } from '../pages/Contact';
 import { Home } from '../pages/Home';
 import { PopularSites } from '../pages/PopularSites';
+import { Category } from '../pages/Category';
 import { News } from '../pages/News';
 import { Support } from '../pages/Support';
 import { Term } from '../pages/Term';
@@ -18,11 +19,15 @@ export const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/:category/:id' element={<SiteDetails />} />
           <Route path='/news' element={<News />} />
+          <Route path='/news/:id' element={<News />} />
+          <Route path='/popular' element={<PopularSites />} />
+          <Route path='/popular/:id' element={<PopularSites />} />
+          <Route path='/category' element={<Category />} />
+          <Route path='/category/:id' element={<Category />} />
           <Route path='/about' element={<About />} />
           <Route path='/terms' element={<Term />} />
           <Route path='/support' element={<Support />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/popular' element={<PopularSites />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </BrowserRouter>

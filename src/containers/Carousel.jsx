@@ -9,10 +9,9 @@ import { Section } from './Section';
 
 export const Carousel = (props) => {
   const { title, data, link } = props;
-  // const redirection = `/${link}`;
 
   return (
-    <Section title={title} buttonTitle='Ver mas'>
+    <Section title={title} buttonTitle='Ver mas' linkButton={link}>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

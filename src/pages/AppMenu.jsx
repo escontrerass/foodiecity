@@ -11,7 +11,7 @@ import { CgPhone } from 'react-icons/cg';
 import { BiCategoryAlt } from 'react-icons/bi';
 
 export const AppMenu = () => {
-  const { menu, setMenu, status, setStatus, setLogin } =
+  const { menu, setMenu, status, setStatus, setLogin, setSignIn, setBusiness } =
     React.useContext(menuContext);
   const sizeIcon = '1.5rem';
   const handleClick = () => setMenu(!menu);
@@ -19,7 +19,16 @@ export const AppMenu = () => {
     setMenu(!menu);
     setLogin(true);
   };
-  const handleStatus = () => setStatus(!status);
+  const handleSignIn = () => {
+    setMenu(!menu);
+    setSignIn(true);
+  };
+  const handleBusiness = () => {
+    setMenu(!menu);
+    setBusiness(true);
+  };
+  const handleLogout = () => setStatus(!status);
+
   return (
     <div className='fixed flex flex-col justify-between top-0 pt-28 bg-white w-full h-screen z-10'>
       <LayoutMin>
@@ -32,7 +41,7 @@ export const AppMenu = () => {
                 handle={handleClick}
               />
             </Link>
-            <Link to='/'>
+            <Link to='category'>
               <ItemMenu
                 title='Categorias'
                 icon={<BiCategoryAlt size={sizeIcon} />}
@@ -84,7 +93,7 @@ export const AppMenu = () => {
                   <ItemMenu
                     title='Registrarme'
                     icon={<FaUserEdit size={sizeIcon} />}
-                    handle={handleLogin}
+                    handle={handleSignIn}
                   />
                 </Link>
                 <Link to={'/'}>
@@ -97,18 +106,16 @@ export const AppMenu = () => {
               </>
             ) : (
               <>
-                <Link to={'/'}>
-                  <ItemMenu
-                    title='Agregar negocio'
-                    icon={<AiFillShop size={sizeIcon} />}
-                    handle={handleClick}
-                  />
-                </Link>
+                <ItemMenu
+                  title='Agregar negocio'
+                  icon={<AiFillShop size={sizeIcon} />}
+                  handle={handleBusiness}
+                />
                 <div className='flex items-center gap-3'>
                   <FaUser size={sizeIcon} /> example@email.com
                 </div>
                 <button
-                  onClick={() => handleStatus()}
+                  onClick={() => handleLogout()}
                   className='mt-2 text-sm text-red mb-5'
                   type='button'
                 >
