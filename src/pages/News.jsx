@@ -25,7 +25,7 @@ export const News = () => {
     <Layout>
       <Extras />
       <Main>
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between '>
           <h3 className='font-bebas text-xl'>Sitios nuevos</h3>
           <div className='w-4/6'>
             <Select
@@ -42,7 +42,7 @@ export const News = () => {
             </Select>
           </div>
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 items-center'>
           {sitesFilter &&
             sitesFilter.map((site) => (
               <SiteCarousel key={site.id} {...site} more={true} />

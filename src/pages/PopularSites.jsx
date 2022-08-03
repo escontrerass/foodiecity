@@ -42,7 +42,7 @@ export const PopularSites = () => {
             </Select>
           </div>
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 w-full tablet:items-center'>
           {sitesFilter &&
             sitesFilter.map((site) => (
               <SiteCarousel key={site.id} {...site} more={true} />
