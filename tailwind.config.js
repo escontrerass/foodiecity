@@ -16,6 +16,9 @@ module.exports = withMT({
         mont: ['Montserrat', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'],
       },
+      screens: {
+        tablet: '670px',
+      },
       fontSize: {
         s: '12px',
       },

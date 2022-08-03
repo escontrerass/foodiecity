@@ -30,7 +30,7 @@ export const AppMenu = () => {
   const handleLogout = () => setStatus(!status);
 
   return (
-    <div className='fixed flex flex-col justify-between top-0 pt-28 bg-white w-full h-screen z-10'>
+    <div className='fixed flex flex-col justify-between top-0 pt-28 bg-white w-full h-screen z-10 tablet:w-1/2 border-r border-blue-gray-300'>
       <LayoutMin menu={true} footer={true}>
         <div className='flex flex-col justify-between px-10 h-full z-30'>
           <div className='flex flex-col gap-5'>

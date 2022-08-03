@@ -18,6 +18,11 @@ export const Carousel = (props) => {
         loop={true}
         navigation={true}
         modules={[Navigation]}
+        breakpoints={{
+          670: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {data &&
           data.map((site) => (
