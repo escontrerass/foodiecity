@@ -22,6 +22,9 @@ export const Carousel = (props) => {
           670: {
             slidesPerView: 2,
           },
+          1000: {
+            slidesPerView: 3,
+          },
         }}
       >
         {data &&

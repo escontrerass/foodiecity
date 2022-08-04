@@ -18,6 +18,7 @@ module.exports = withMT({
       },
       screens: {
         tablet: '670px',
+        dt: '1000px',
       },
       fontSize: {
         s: '12px',

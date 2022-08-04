@@ -9,16 +9,16 @@ export const Footer = (props) => {
   return (
     <footer className='bottom-0 w-full flex flex-col items-center'>
       {!status && (
-        <div className='grid grid-cols-2 justify-items-center w-full h-36 bg-gradient-to-t from-amber-200'>
+        <div className='grid grid-cols-2 justify-items-center w-full h-36 bg-gradient-to-t from-amber-200 dt:h-24'>
           <>
-            <div className='flex flex-col items-center justify-center gap-2'>
+            <div className='flex flex-col items-center justify-center gap-2 dt:flex-row'>
               <div>
                 <Logo />
               </div>
               <Rrss />
             </div>
             <div className='flex items-center w-full'>
-              <ul className='flex flex-col gap-3 text-s'>
+              <ul className='flex flex-col gap-3 text-s dt:flex-row'>
                 <li>
                   <Link to='/about'>Quienes somos</Link>
                 </li>
