@@ -229,7 +229,7 @@ export const sitesList = [
     id: 5,
     name: 'Mi Vaquita Gourmet CA',
     category: 2,
-    description: 'La tradicion de Mi Vaquita',
+    description: 'La tradición de Mi Vaquita',
     address: 'Calle 14, San Cristóbal 5001, Táchira',
     hours: [
       'Lunes, 11:00 - 21:00',
@@ -259,7 +259,7 @@ export const sitesList = [
         date: 'Sep - 2021',
         author: 'Jenn Lopez',
         review:
-          'Bajo la calidad de las hamburguesas y el sitio descuidado, una lastima, eran una buena opcion',
+          'Bajó la calidad de las hamburguesas y el sitio descuidado, una lastima, eran una buena opcion',
         rating: '4.0',
       },
       {
@@ -427,7 +427,7 @@ export const sitesList = [
         date: 'May - 2021',
         author: 'Pablo Mora',
         review:
-          'Conocen el arte culinario que ofrecen. Bonita atención. Felicitaciones Tachira.',
+          'Conocen el arte culinario que ofrecen. Bonita atención. Felicitaciones Táchira.',
         rating: '4.7',
       },
       {
@@ -568,7 +568,7 @@ export const categoryList = [
   },
   {
     id: 1,
-    name: 'Comida rapida',
+    name: 'Comida rápida',
   },
   {
     id: 2,
@@ -584,7 +584,7 @@ export const categoryList = [
   },
   {
     id: 5,
-    name: 'Comida arabe',
+    name: 'Comida árabe',
   },
   {
     id: 6,

@@ -13,14 +13,14 @@ export const Support = () => {
         <div className='flex flex-col gap-3 mt-10 px-3'>
           <h4 className='font-bebas text-xl mb-2'>Soporte</h4>
           <p className='text-s'>
-            Contacte con nuestro soporte mediante nuestro numero movil o por
+            Contacte con nuestro soporte mediante nuestro número movil o por
             medio de nuestro correo electronico
           </p>
           <div className='flex flex-col gap-10 mt-16 items-center'>
             <div className='flex flex-col items-center gap-3'>
               <p className='flex items-center gap-3'>
                 <AiFillPhone size='1.5rem' />
-                Contacto telefonico:
+                Contacto telefónico:
               </p>
               <PrimaryButton title='+58 424-1234567' />
             </div>

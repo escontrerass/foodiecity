@@ -27,7 +27,7 @@ export const Search = () => {
             onChange={(e) => handleSearchText(e.target.value)}
           />
           <Select
-            label='Elige una categoria'
+            label='Elige una categoría'
             color='orange'
             onChange={(e) => handleCategory(e)}
           >

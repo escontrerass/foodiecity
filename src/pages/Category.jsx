@@ -28,7 +28,7 @@ export const Category = () => {
           <h3 className='font-bebas text-xl'>Categorias</h3>
           <div className='w-4/6'>
             <Select
-              label='Elige una categoria'
+              label='Elige una categoría'
               color='orange'
               onChange={(e) => handleCategory(e)}
             >

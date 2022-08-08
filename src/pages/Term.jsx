@@ -36,7 +36,7 @@ export const Term = () => {
             (colectivamente, el "Servicio"). Al acceder o utilizar el Servicio,
             usted acepta estas Condiciones, que constituyen un contrato
             legalmente vinculante con (i) Foodie City C.A una sociedad de San
-            Cristobal, Tachira, Venezuela. No acceda ni utilice el Servicio si
+            Cristobal, Táchira, Venezuela. No acceda ni utilice el Servicio si
             no está dispuesto o no puede someterse a las Condiciones. Para
             obtener más información sobre nuestras políticas e instrucciones
             relacionadas con el Servicio

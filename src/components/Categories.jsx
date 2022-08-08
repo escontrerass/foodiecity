@@ -9,7 +9,7 @@ export const Categories = (props) => {
   const handleCategory = (id) => navigate(`/category/${id}`);
 
   return (
-    <Section title='Categorias' buttonTitle='Ver mas' linkButton={link}>
+    <Section title='Categorias' buttonTitle='Ver más' linkButton={link}>
       {categories && (
         <div className='grid grid-cols-3 gap-3'>
           {categories.map((category) => (

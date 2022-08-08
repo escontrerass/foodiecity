@@ -17,13 +17,13 @@ export const Home = () => {
       <Main>
         <Carousel
           title='Sitios nuevos'
-          buttonTitle='Ver mas'
+          buttonTitle='Ver más'
           data={news}
           link='/news'
         />
         <Carousel
           title='Sitios populares'
-          buttonTitle='Ver mas'
+          buttonTitle='Ver más'
           data={top}
           link='/popular'
         />

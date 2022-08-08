@@ -43,7 +43,7 @@ export const AppMenu = () => {
             </Link>
             <Link to='category'>
               <ItemMenu
-                title='Categorias'
+                title='Categorías'
                 icon={<BiCategoryAlt size={sizeIcon} />}
                 handle={handleClick}
               />
@@ -98,7 +98,7 @@ export const AppMenu = () => {
                 </Link>
                 <Link to={'/'}>
                   <ItemMenu
-                    title='Iniciar sesion'
+                    title='Iniciar sesión'
                     icon={<FaUser size={sizeIcon} />}
                     handle={handleLogin}
                   />

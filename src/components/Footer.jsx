@@ -23,7 +23,7 @@ export const Footer = (props) => {
                   <Link to='/about'>Quienes somos</Link>
                 </li>
                 <li>
-                  <Link to='/terms'>Terminos y condiciones</Link>
+                  <Link to='/terms'>Términos y condiciones</Link>
                 </li>
                 <li>
                   <Link to='/support'>Soporte</Link>

@@ -29,7 +29,7 @@ export const News = () => {
           <h3 className='font-bebas text-xl'>Sitios nuevos</h3>
           <div className='w-4/6'>
             <Select
-              label='Elige una categoria'
+              label='Elige una categoría'
               color='orange'
               onChange={(e) => handleNews(e)}
             >
@@ -50,7 +50,7 @@ export const News = () => {
         </div>
         {sitesFilter.length > 3 && (
           <div className='w-3/6 self-center'>
-            <PrimaryButton title='Ver mas' />
+            <PrimaryButton title='Ver más' />
           </div>
         )}
       </Main>

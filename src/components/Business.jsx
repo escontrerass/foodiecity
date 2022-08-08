@@ -30,21 +30,21 @@ export const Business = () => {
         type='text'
         name='category'
         id='category'
-        placeholder='Categoria'
+        placeholder='Categoría'
       />
       <input
         className={inputStyles}
         type='text'
         name='address'
         id='address'
-        placeholder='Direccion'
+        placeholder='Dirección'
       />
       <input
         className={inputStyles}
         type='number'
         name='phone'
         id='phone'
-        placeholder='Numero telefonico'
+        placeholder='Número telefónico'
       />
       <input
         className={inputStyles}
