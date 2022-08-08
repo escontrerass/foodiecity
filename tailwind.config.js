@@ -10,7 +10,7 @@ module.exports = withMT({
         red: '#FF0000',
         yellow: '#FFCC00',
         gray: '#707070',
-        lightGray: '',
+        lightGray: '#D9CECE',
       },
       fontFamily: {
         mont: ['Montserrat', 'sans-serif'],

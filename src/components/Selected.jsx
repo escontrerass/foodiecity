@@ -25,6 +25,8 @@ export const Selected = (props) => {
     hours,
     setModal,
     setModalImg,
+    map,
+    webside,
   } = props;
   const location = useLocation();
   const categoryName = categoryList.filter((ctg) => ctg.id === category);
@@ -71,18 +73,22 @@ export const Selected = (props) => {
             <p className='text-red text-s'>Whatsapp</p>
           </div>
         </a>
-        <div className='flex flex-col items-center'>
-          <MdLocationPin color={colorIcon} size={sizeIcon} />
-          <p className='text-red text-s'>Como llegar</p>
-        </div>
+        <a href={map} target='_blank' rel='noopener noreferrer'>
+          <div className='flex flex-col items-center'>
+            <MdLocationPin color={colorIcon} size={sizeIcon} />
+            <p className='text-red text-s'>Como llegar</p>
+          </div>
+        </a>
         <div className='flex flex-col items-center'>
           <MdPhoneInTalk color={colorIcon} size={sizeIcon} />
           <p className='text-red text-s'>Llamar</p>
         </div>
-        <div className='flex flex-col items-center'>
-          <BsLink45Deg color={colorIcon} size={sizeIcon} />
-          <p className='text-red text-s'>Sitio web</p>
-        </div>
+        <a href={webside} target='_blank' rel='noopener noreferrer'>
+          <div className='flex flex-col items-center'>
+            <BsLink45Deg color={colorIcon} size={sizeIcon} />
+            <p className='text-red text-s'>Sitio web</p>
+          </div>
+        </a>
       </div>
       <p className='text-sm'>{description}</p>
       <Section

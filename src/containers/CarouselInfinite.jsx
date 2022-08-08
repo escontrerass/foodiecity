@@ -26,6 +26,14 @@ export const CarouselInfinite = (props) => {
           clickable: true,
         }}
         modules={[Pagination]}
+        breakpoints={{
+          670: {
+            slidesPerView: 3,
+          },
+          1000: {
+            slidesPerView: 5,
+          },
+        }}
       >
         {data.map((imag, index) => (
           <SwiperSlide key={index}>
