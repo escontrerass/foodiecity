@@ -3,11 +3,12 @@ import { Rating } from './Rating';
 import { Review } from './Review';
 import { Section } from '../containers/Section';
 import { Rrss } from './Rrss';
-import { categoryList } from '../data';
+import { sitesList, categoryList } from '../data';
 import { BsWhatsapp, BsLink45Deg } from 'react-icons/bs';
 import { MdLocationPin, MdPhoneInTalk } from 'react-icons/md';
 import { CarouselInfinite } from '../containers/CarouselInfinite';
 import { useLocation } from 'react-router-dom';
+import { Carousel } from '../containers/Carousel';
 
 export const Selected = (props) => {
   const {
@@ -60,10 +61,16 @@ export const Selected = (props) => {
         </p>
       </div>
       <div className='flex justify-around'>
-        <div className='flex flex-col items-center'>
-          <BsWhatsapp color={colorIcon} size={sizeIcon} />
-          <p className='text-red text-s'>Whatsapp</p>
-        </div>
+        <a
+          href={`https://wa.me/+58${phone.slice(1, phone.length)}`}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='flex flex-col items-center'>
+            <BsWhatsapp color={colorIcon} size={sizeIcon} />
+            <p className='text-red text-s'>Whatsapp</p>
+          </div>
+        </a>
         <div className='flex flex-col items-center'>
           <MdLocationPin color={colorIcon} size={sizeIcon} />
           <p className='text-red text-s'>Como llegar</p>
@@ -113,6 +120,12 @@ export const Selected = (props) => {
         <h3 className='font-bebas text-xl'>Reseñas</h3>
         <Rrss />
       </div>
+      <Carousel
+        title='Recomendaciones'
+        buttonTitle='Ver más'
+        data={sitesList}
+        link='/'
+      />
     </div>
   );
 };
