@@ -9,7 +9,6 @@ export const Section = (props) => {
   const handleRedirect = () => {
     !handle ? navigate(`${linkButton}`) : handle();
   };
-  console.log(windowWidth);
 
   return (
     <div className='flex flex-col'>

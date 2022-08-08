@@ -28,7 +28,7 @@ export const Results = () => {
       <Extras />
       <Main>
         <div className='flex justify-between items-center'>
-          <h3 className='font-bebas text-xl'>Resultados</h3>
+          <h3 className='font-bebas text-xl dt: text-3xl'>Resultados</h3>
           <div className='w-4/6'>
             <Select
               label='Elige una categoría'
@@ -44,7 +44,7 @@ export const Results = () => {
             </Select>
           </div>
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 dt: grid grid-cols-2'>
           {sitesFilter &&
             sitesFilter.map((site) => (
               <SiteCarousel key={site.id} {...site} more={true} />

@@ -5,7 +5,7 @@ export const Review = (props) => {
   const { review } = props;
 
   return (
-    <div className='flex flex-col gap-1 px-2'>
+    <div className='flex flex-col gap-1 px-2 dt:mb-5'>
       <div className='flex justify-between text-sm'>
         <p>{review.author}</p>
         <p>{review.date}</p>

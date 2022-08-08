@@ -4,7 +4,7 @@ import { Layout } from '../containers/Layout';
 import { Main } from '../containers/Main';
 import { sitesList, categoryList } from '../data';
 import { SiteCarousel } from '../components/SiteCarousel';
-import { PrimaryButton } from '../components/PrimaryButton';
+// import { PrimaryButton } from '../components/PrimaryButton';
 import { Extras } from '../components/Extras';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ export const Category = () => {
       <Extras />
       <Main>
         <div className='flex justify-between items-center'>
-          <h3 className='font-bebas text-xl'>Categorias</h3>
+          <h3 className='font-bebas text-xl dt: text-3xl'>Categorias</h3>
           <div className='w-4/6'>
             <Select
               label='Elige una categoría'
@@ -41,17 +41,17 @@ export const Category = () => {
             </Select>
           </div>
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 dt: grid grid-cols-2'>
           {sitesFilter &&
             sitesFilter.map((site) => (
               <SiteCarousel key={site.id} {...site} more={true} />
             ))}
         </div>
-        {sitesFilter.length > 3 && (
+        {/* {sitesFilter.length > 3 && (
           <div className='w-3/6 self-center'>
             <PrimaryButton title='Ver mas' />
           </div>
-        )}
+        )} */}
       </Main>
     </Layout>
   );
